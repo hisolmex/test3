@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Lemonada');
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+	font-family: 'Lemonada', cursive;
+}
+body {
+	margin: 0;
+}
+.container {
+    width:100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+ }
+[class*="col-"] {
+    width: 100%;
+    height:150px;
+    padding: 12px; 
+	float:left;
+}
+header {
+	background-color: #313030;
+	
+}
+
+header img {
+	float: left;
+	
+}
+nav {
+	min-height: 50px;
+	
+}
+.nav:before, .nav:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+header>div>nav>ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: right;
+	font-size: 0;
+	
+}
+header>div>nav>ul>li a {
+	line-height: 50px;
+	padding: 0 20px;
+	display: block;
+	text-decoration: none;
+	color: #9C8A8A;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-size: 15px;
+	font-family: 'Lemonada', cursive;
+}
+header>div>nav>ul>li a:hover {
+	color: orange;
+}
+header li {
+	display: inline-block;
+	padding-left: 35px;
+}
+header li:hover {
+	background: #B80000;
+	cursor: pointer;
+}
+.jumbotron {
+	height: 100vh;
+	width: 100%;
+	background: URL(http://www.tapeciarnia.pl/tapety/normalne/tapeta-rudy-lis-na-zimowej-lesnej-polanie.jpg);
+	    box-shadow: 2px 1px 20px 0px #d6c4c4;
+	background-size: cover;
+	background-position: center;
+	-moz-box-shadow: 0px 5px 200px #00C0FF;
+    -webkit-box-shadow: 0px 5px 200px #00C0FF;
+    box-shadow: 0px 5px 200px #00C0FF;
+}
+.jumbotron h1 {
+	margin: 0;
+	font-size: 50px;
+	color: white;
+	padding: 10px;
+}
+.gallery {
+	margin-top: 20px;
+    margin-bottom: 20px;
+	overflow: hidden;
+}
+.photo {
+	width: 30%;
+	float: left;
+	margin-right: 5%;
+}
+.photo img {
+	width: 100%;
+	height: auto;
+	border-radius: 4px;
+	box-shadow: 0 0 6px #000;
+}
+.photo:last-of-type {
+	margin-right: 0;
+}
+.map img {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	box-shadow: 2px 1px 20px 0px #d6c4c4;
+}
+
+footer{
+	margin-top: 20px;
+    width: 100%;
+    background-color: #313030;
+    text-align: center;
+}
+footer p {
+	height: 80px;
+    line-height: 80px;
+    color: #9C8A8A;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+	footer {
+		background: #00C0FF;
+	}
+	
+	header>div>nav>ul {
+		float: none;
+		
+	}
+	header img {
+		float: none;
+		width: 100%;
+		height: auto;
+		
+	}
+	header li {
+		display: block;
+	}
+	
+	nav {
+		text-align: center;
+	}
+	
+	.photo {
+		width: 100%;
+		float: none;
+	}
+	header>div>nav>ul>li a {
+		font-size: 30px;
+	}
+
+}
