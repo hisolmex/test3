@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    background-color: #e9f4ff; 
+}
+.container {
+	display:flex;
+	display: -webkit-flex;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+header nav {
+	display: flex;
+	background-color: #3baed8;
+	width: 100%;
+}
+nav > ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+nav > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  background-color: #3baed8;
+}
+nav > ul > li:hover {
+  background-color: #647e88;
+  cursor: pointer;
+}
+li > a {
+  color: white;
+  text-decoration: none;
+}
+.logo {
+    font-weight: bold;
+    font-size: 30px;
+	color: white;
+    width: 100px;
+    height: 60px;
+    display:flex;
+    align-items: center;
+	margin-left: 20px;
+}
+.jumbotron {
+	display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+	background-color: #ffc664;
+	height:75vh;
+}
+h1 {
+	margin-left: 20px;
+	font-size: 60px;
+}
+.gallery {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+}
+.gallery img {
+	width: 370px;	
+	height: 370px;
+}
+.photo {
+	margin: 10 px;
+}
+.cards {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.card {
+  margin:5px;
+  min-width:200px;
+  min-height:100px;
+  background-color: #626564;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  
+}
+.card:hover {
+	
+	background: orange;
+	cursor: pointer;
+	color: black;
+}
+footer .container {
+  height:80px;
+  display:flex;
+  background: #3baed8;
+  color: white;
+}
+.copyrights {
+	margin-left: 20px;
+}
+.contact {
+	margin-right: 20px;
+}
+.company {
+	flex-grow:2;
+}
+.company, .copyrights, .contact {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 10px;
+}
